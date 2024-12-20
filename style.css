@@ -1,3 +1,4 @@
+/*-----------------General Styles--------------*/
 body, html {
     margin: 0;
     padding: 0;
@@ -5,6 +6,76 @@ body, html {
     font-family: 'Arial', sans-serif;
 }
 
+body {
+    line-height: 1.6;
+    color: #2c3e50;
+    background-image: url('resources/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content .text {
+    flex: 1;
+}
+
+.content.reverse {
+    flex-direction: row-reverse;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-color: #3498db;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #2c3e50;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0).1;
+}
+
+.container img {
+    max-width: 600px;
+}
+
+/* ----------------HEADER---------------- */
 /*NAv bar*/
 .navbar {
     display: flex;
@@ -45,12 +116,156 @@ body, html {
     color: #3498db;
 }
 
-.cta .btn {
-    padding: 0.5rem;
-    background-color: #3498db;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+/* Hamburger for smaller screens*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background:black;
     border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
+}
+
+/* ----------------BODY------------------ */
+.about-me {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.my-services {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.my-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.my-services li {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.my-career {
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.lets-talk {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.lets-talk .btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* ----------------Fo0ter--------------- */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer a {
+    color: aquamarine;
+    text-decoration: none;
+}
+.footer a:hover {
+    cursor: pointer;;
+}
+/* ----------------Media Qury Mobike devices---------------- */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        padding: 1rem 0;
+        text-align: right;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .cta {
+        margin-top: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    section {
+        padding: 2rem 1rem;
+    }
+
+    .my-services ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    .my-services li {
+        font-size: 1rem;
+    }
+
+    .lets-talk .btn {
+        width: 80%
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content.reverse {
+        text-align: center;
+    }
+
+    .content img {
+        max-width: 50%;
+    }
+}
+
+/* ------------Animation Frmes---------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section {
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,100 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Mercy Namuya</title>
 </head>
+
 <body>
     <header class="navbar">
         <div class="logo">Mercy<br>Nangolol</div>
+        <button class="hamburger" aria-label="Toogle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         <nav class="nav-links">
-            <a href="#About-Me">About Me</a>
-            <a href="#Services">My Services</a>
-            <a href="Carer-path">My Carer P</a>
-            <a href="Contact">Let's Talk</a>
+            <a href="#about-me">About Me</a>
+            <a href="#my-services">My Services</a>
+            <a href="#my-career">My Career</a>
         </nav>
         <div class="cta">
-            <a href="#book-now" class="btn">Book Now</a>
+            <a href="https://wa.me/+254740574917?text=Hello%20Dr%20Nangolol.%20I%20would%20like%20inquire%20about%20your%20Physiotherapy%20Services." class="btn">Book Now</a>
         </div>
     </header>
+    <!--About me-->
+    <section id="about-me" class="about-me">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1>About Me</h1>
+                    <p>
+                        Hallo There,I am Mercy Nangolol, a Licensed Physiotherapist dedicated
+                        to helping individuals regain mobility, reduce pain, and improve their
+                        quality of life. My expertise spans various Physiotherapy techniques
+                        tailored to your needs.
+                    </p>
+                </div>
+                <img src="./resources/physio-person.webp" alt="Physiotherapist">
+            </div>
+        </div>
+    </section>
+    <!--My Services Section-->
+    <section id="my-services" class="my-services">
+        <div class="container">
+            <div class="content reverse">
+                <div class="text">
+                    <h1>MY Services</h1>
+                    <ul>
+                        <li>Manual Therapy</li>
+                        <li>Post-Injury Rehabilitation</li>
+                        <li>Sports Physiotherapy</li>
+                        <li>Chronic Pain Management</li>
+                    </ul>
+                </div>
+                <img src="resources/physio-at-work.webp" alt="physiotherapist at work">
+            </div>
+        </div>
+    </section>
+    <!--My Career Section-->
+    <section id="my-career" class="my-career">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1>My Career</h1>
+                    <p>
+                        I graduated from this-example-university with a specialization in physiotherapy.
+                        Over the years, I've worked with hospitals, clinics, and private clients,
+                        helping hundreds of patients recover and thrive.
+                    </p>
+                </div>
+                <img src="resources/physio.webp" alt="Carer milestones">
+            </div>
+        </div>
+    </section>
+    <!--let's Talk section-->
+    <section id="lets-talk" class="lets-talk">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1>Let's Talk</h1>
+                    <p>
+                        If you're ready to take the next step in your recovery journey, reach out today!
+                        Whenever you're dealing with an injury, chronic pain, or need guidance I'm here to help.
+                    </p>
+                    <a href="#book-now" class="btn">Contact me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mercy Nangolol's Physiotherapist Portfolio. <br>
+                Developed by Brivia - <a href="https://theroamingphysio.fit">Click to Contact this developer</a>
+                <br>
+                All rights reserved
+            </p>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
 </body>
+
 </html>
